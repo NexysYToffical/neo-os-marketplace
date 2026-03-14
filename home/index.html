@@ -1,0 +1,121 @@
+<style>
+    body {
+      background-color:blue;
+        cursor:default;
+        scrollbar-width: none;
+        margin: 10px;
+        background-repeat: no-repeat;
+        font-family: monospace;
+        background-size: cover;
+        /* Prevents users from accidentally scrolling the whole "app" around */
+    overflow: hidden; 
+    /* Stops people from long-pressing and "selecting" your text like a webpage */
+    user-select: none;
+    -webkit-user-select: none;
+    }
+    clock {
+        background-color: rgba(255, 255, 255, 0.658);
+        display: block;
+        box-shadow: 10px;
+        color: rgb(0, 0, 0);
+        font-size: xx-large;
+        size: 400px;
+        padding: 20px;
+    }
+    topbar {
+    font-size: 1px;
+    width: 400px;
+    display: flexbox;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 20px;
+    color: rgba(255, 255, 255, 0);
+    transition: height 0.3s ease;
+    overflow: hidden;
+    }
+
+    topbar:hover {
+        height: 500px;
+        color: black;
+        font-size: medium;
+        transition: height 0.3s ease;
+    }
+
+    b {
+        display: contents;
+    }
+    bottom {
+        border:black thin solid;
+        background-color: white;
+        bottom: 10%;
+        position: fixed;
+        padding: 10px;
+        left: 50%;
+    }
+    sys {
+        top: 0;
+        left: 0;
+        font-variant: small-caps;
+        display: table;
+        margin: 0px;
+        background-color: black;
+        color: white;
+        padding: 0px;
+        gap: 0px;
+        row-gap: 0px;
+        z-index: 1;
+        position: fixed;
+        z-index: 1000;
+        font-style: oblique;
+        font-family: serif;
+        font-size: 10px;
+    } 
+    app {
+        color: black;
+        font-style: normal;
+        font-synthesis: none;
+        font-variant: normal;
+        margin: 10px;
+        display:inline-block;
+        border-radius: 0px;
+        border: thin solid black;
+        background-color: rgb(255, 255, 255);
+        padding: 0px;
+        border-radius: 100%;
+        
+    }
+    a {
+        font-style: normal;
+        font-kerning: none;
+        text-decoration: none;
+        color: inherit;
+    }
+    app:hover {
+        background-color: aliceblue;
+    }
+    app:active {
+        background-color: bisque;
+    }
+    sidebar {
+        position: fixed;
+        width: 50px;
+        height: 100%;
+
+    }
+    info {
+        color: black;
+        font-size: medium;
+    }
+    button {
+        appearance: none;
+        border: thin black solid;
+        background-color: rgba(151, 151, 151, 0.616);
+        padding: 10px;
+        margin: 10px;
+    }
+    img {
+        border-radius: 100%;
+    }
+</style>
+<clock>Marketplace</clock>
+Woah! You're here too early! There are no apps available at the moment.
